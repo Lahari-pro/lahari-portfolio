@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Welcome to Lahari Portfolio. Java Developer"/>
+	<style>
+	body{
+		font-family: Arial, sans-serif;
+		background-color: #f9f9f9;
+		color: #333;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		scroll-behavior: smooth;
+	}
+	header{
+		padding: 20px;
+		background-color :lightseagreen;
+		color: #ffffff;
+		box-shadow: 0px 4px 10 px rgba(0, 0, 0, 0.1);
+	}
+	section{
+		margin: 40px 20px;
+		padding: 20px;
+		background: white;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		opacity: 0;
+		transform: translateY(20px);
+		transition: all 0.6s ease-in-out;
+	}
+	.visible{
+		transform: translateY(0);
+		opacity: 1;
+	}
+	
+	h1, h2{
+		color: lightseagreen;
+	}
+	
+	a{
+		color: black;
+		text-decoration: none;
+		transition: color 0.3s;
+	}
+	
+	a:hover{
+		color: lightgray;
+	}
+	
+	.skill-container, .projects-container, .internships-container{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+		justify-content: center;
+	}
+	
+	.skill-card, .project-card, .intern-card, .cert-card{
+		flex: 1 1 300px;
+		background: #f9f9f9;
+		padding: 15px;
+		border-radius: 8px;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+	}
+	
+	.resume-btn{
+		background-color: lightgray;
+		color: black;
+		padding: 10px 20px;
+		border-radius: 5px;
+		text-decoration: none;
+		font-size: 16px;
+		transition: background-color 0.3s;
+	}
+	
+	.resume-btn:hover{
+		background-color: lightseagreen;
+	}	
+	  
+	</style>
+</head>
+
+<body>
+	<header>
+		<h3>LAHARI MARRI</h3>
+		<p>Java Developer | Backend with Database Expertise</p>
+	</header>
+<div class="container">
+	<section id="about">
+		<h2>About Me</h2>
+		<p>Passionate Java Developer with expertise in Backend Development, APIs, and Database Management.</p>
+	</section>
+	
+	<section id="skills">
+		<h2>Technical Skills</h2>
+		<div class="skill-container">
+			<div class="skill-card">
+				<h3>Programming Languages</h3>
+				<p>Java, C Language</p>
+			<div>
+			
+			<div class="skill-card">
+				<h3>Frontend Development</h3>
+				<p>HTML, CSS, JavaScript, Design Thinking</p>
+			</div>
+			
+			<div class="skill-card">
+				<h3>Backend Development</h3>
+				<p>Spring Boot, JSP, Servlets</P>
+			</div>
+			
+			<div class="skill-card">
+				<h3>Databases</h3>
+				<p>Oracle SQL, PL/SQL</p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="projects">
+		<h2>Projects</h2>
+		<div class="projects-container">
+			<div class="project-card">
+				<h3>Employee Management System</h3>
+				<p>Designed and developed an Employee Management System using Java, Servlets, and SQL to manage Employee data efficiently.</p>
+				<p><strong>Technologies:</strong>Java, Servlets, JDBC, HTML, SQL</p>
+			</div>	
+			
+			<div class="project-card">
+				<h3>Porfolio Tracker</h3>
+				<p>A web-based application developed as part of my full stack development training. It allows users to manage their stock porfolio with features like Add, Edit, Update, and Delete.</p>
+				<p><strong>Technologies:</strong>Spring Boot, Java, HTML, CSS, JavaScript, Oracle SQL</p>
+			</div>
+		</div>
+	</section>
+	
+	
+				
+	<section id="internships">
+		<h2>Internships</h2>
+		<div class="internships-container">
+			<div class="intern-card">
+				<h3>Machine Learning Intern – Smart Knowers</h3>
+				<p>Completed an internship in Machine Learning, applying fundamental machine learning concepts to practical projects.</p>
+			</div>
+			
+			<div class="intern-card">
+				<h3>Full Stack Development Intern – Future Intern</h3>
+				<p>Completed a Full Stack Development internship, working on 3 projects.</p>
+			</div>	
+
+		</div>
+	</section>
+			
+		
+	<section id="certifications">
+		<h2>Certifications</h2>
+		<div class="certifications">
+			<div class="cert-card">
+				<h3>Web Development Specialization</h3>
+				<p>Learned HTML,CSS, JavaScript, and responsive design priciples</p>
+			</div>
+		
+			<div class="cert-card">
+				<h3>Microsoft Azure Fundamentals</h3>
+				<p>Certified in Azure Computing</p>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="resume">
+		<h2>Resume</h2>
+		<a href="https://drive.google.com/file/d/1mleCBHrraZ4zWbfKzzJMp1h9GIjCAB2k/view?usp=drive_link" class="resume-btn" target="_blank">Download Resume</a>
+	</section>
+		
+	<section id="contact">
+		<h2>Contact</h2>
+		<a href="https://www.linkedin.com/in/lahari-marri-98a147229/" target="_blank">LinkedIn</a>
+		<a href="https://github.com/Lahari-pro?tab=repositories" target="_blank">GitHub</a>
+	</section>
+</div>
+
+	<script>
+	document.querySelectorAll("section").forEach(section => 
+	{
+		setTimeout(() => section.classList.add("visible"), 200);
+	});
+
+	</script>
+	
+</body>
+</html>
+	
+	
+	
+			
